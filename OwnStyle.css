@@ -1,0 +1,60 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,600;9..40,700&family=Inter:wght@300;500;600;700&family=Young+Serif&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,600;9..40,700&family=Inter:wght@300;500;600;700&family=Playpen+Sans:wght@300;400;500&family=Young+Serif&display=swap');
+
+.navbar-main{
+    font-family: Young Serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    background-color: ;
+}
+body {
+    background-color: #CEF4FD;
+    display: flex auto;
+
+
+    }
+
+.nav-button{
+        text-transform: capitalize;
+        text-align: left;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+
+    
+
+@media (min-width: 992px) {
+
+
+    .nav-link{
+        text-transform: capitalize;
+        text-align: left;
+        margin-right: 10px;
+        font-weight: 500;
+        position: relative;
+    }
+
+    
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #18272F;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        
+        margin-left: 20%;
+        
+      }
+    
+    .nav-link:hover::after {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+}
